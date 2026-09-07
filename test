@@ -1,1 +1,53 @@
-print("hello world")
+import os
+os.system('clear')
+def rerun():
+    again = input("Do you want another action? (y/n): ").lower()
+    return again == "y"
+round = 0
+
+while True:
+    
+    os.system('clear')
+    if round == 1:
+        print("Fantastic! Lets get started with another calculation!")
+
+
+    while True:
+        try:
+            num1 = int(input("enter a valid digit number 1: "))
+            break
+        except ValueError:
+                print("invalid input, please enter a valid number.")
+    while True:
+        try:
+            num2 = int(input("enter a valid digit number 2: "))
+            break
+        except ValueError:
+            print("invalid input, please enter a valid number.")
+
+
+    os.system('clear')
+    print(f"your numbers are: {num1} and {num2}! Now chose an opperation to preform!")
+
+
+    mode = input("Enter operation (+, -, *, /): ")
+    if mode == "+":
+        print(("Calculated"),(num1 + num2))
+    elif mode == "-":
+        print(("Calculated"),(num1 - num2))
+    elif mode == "*":
+        print(("Calculated"),(num1 * num2))
+    elif mode == "/":
+        if num2 != 0:
+            print(("Calcualted"),(num1 / num2))
+        else:
+            print("Division by zero equals undefined!")
+    
+    if not rerun():
+        
+        os.system('clear')
+        print("Thank you for using the calculator!")
+        break
+    else:
+        round = 1
+        
