@@ -1,5 +1,5 @@
 # Terminal Calculator (PY)
-A simple, robust command-line calculator built in Python during my Grade 12 year.
+A simple, command-line calculator built in Python during my Grade 12 year as my first solo project.
 
 ## Features
 - Input validation (prevents crashes from invalid characters)
