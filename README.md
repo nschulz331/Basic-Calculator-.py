@@ -1,4 +1,4 @@
-# Terminal Calculator
+# Terminal Calculator (PY)
 A simple, robust command-line calculator built in Python during my Grade 12 year.
 
 ## Features
